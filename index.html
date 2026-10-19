@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ConcursIT · Un Fantasma en el Sistema</title>
+<meta name="description" content="Juegos de clase de informática y ciberseguridad, gratis y en el navegador: Trivial por equipos con tablero, Pasapalabra con seis roscos y modo duelo, y ¿Quién dijo qué? con frases de la informática de fuente comprobada.">
+<link rel="icon" type="image/png" href="assets/ghost.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/core.css">
+<script>(function(){var t=null;try{t=localStorage.getItem('ci_theme')}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t)})();</script>
+</head>
+<body>
+<header class="ci-top" id="ciTop"></header>
+
+<main class="wrap">
+
+  <section data-tab="inicio" hidden>
+    <div class="wrap" style="padding:0">
+      <section class="panel hero">
+        <div>
+          <span class="tag" style="color:var(--accent)" data-t="home.badge"></span>
+          <h1 class="h1" style="margin:10px 0 8px">ConcursIT</h1>
+          <p class="lead" data-t="home.lead"></p>
+        </div>
+        <img src="assets/ghost.png" alt="" width="112" height="112">
+      </section>
+      <section class="tools">
+        <a class="tool-card" href="#trivial">
+          <span class="ico">🎲</span>
+          <h2 data-t="home.trivial"></h2>
+          <p data-t="home.trivialD"></p>
+          <ul><li data-t="home.t1"></li><li data-t="home.t2"></li><li data-t="home.t3"></li></ul>
+          <span class="was" data-t="home.wasTrivial"></span>
+          <span class="go" data-t="home.open"></span>
+        </a>
+        <a class="tool-card" href="#rosco">
+          <span class="ico">🔤</span>
+          <h2 data-t="home.rosco"></h2>
+          <p data-t="home.roscoD"></p>
+          <ul><li data-t="home.r1"></li><li data-t="home.r2"></li><li data-t="home.r3"></li></ul>
+          <span class="was" data-t="home.wasRosco"></span>
+          <span class="go" data-t="home.open"></span>
+        </a>
+        <a class="tool-card" href="#frases">
+          <span class="ico">💬</span>
+          <h2 data-t="home.frases"></h2>
+          <p data-t="home.frasesD"></p>
+          <ul><li data-t="home.f1"></li><li data-t="home.f2"></li><li data-t="home.f3"></li></ul>
+          <span class="was" data-t="home.wasFrases"></span>
+          <span class="go" data-t="home.open"></span>
+        </a>
+      </section>
+      <section class="grid2">
+        <div class="panel"><div class="panel-title" data-t="home.classT"></div><p data-t-html="home.class"></p></div>
+        <div class="panel"><div class="panel-title" data-t="home.fixT"></div><p data-t-html="home.fix"></p></div>
+      </section>
+    </div>
+  </section>
+
+  <section data-tab="trivial" hidden><div id="trivialApp" class="wrap" style="padding:0"></div></section>
+  <section data-tab="rosco" hidden><div id="roscoApp" class="wrap" style="padding:0"></div></section>
+  <section data-tab="frases" hidden><div id="frasesApp" class="wrap" style="padding:0"></div></section>
+
+</main>
+
+<footer class="ci-foot" id="ciFoot"></footer>
+
+<script src="assets/core.js"></script>
+<script src="assets/data/trivial.js"></script>
+<script src="assets/data/roscos.js"></script>
+<script src="assets/data/frases.js"></script>
+<script src="assets/engine/quiz.js"></script>
+<script src="assets/engine/rosco.js"></script>
+<script src="assets/home.js"></script>
+<script src="assets/app-trivial.js"></script>
+<script src="assets/app-rosco.js"></script>
+<script src="assets/app-frases.js"></script>
+</body>
+</html>
